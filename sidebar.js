@@ -1,6 +1,14 @@
 const omenu = document.getElementById("omenu");
 const sidebar = document.querySelector(".sidebar");
 
+const body2 = document.querySelector("#body2")
+body2.addEventListener("click",()=>{
+
+    sidebar.style.display = "none"
+    omenu.classList.toggle("fa-bars");
+    omenu.classList.toggle("fa-xmark");
+})
+
 omenu.addEventListener("click", () => {
     if (sidebar.style.display === "block" || sidebar.style.display === "") {
         sidebar.style.display = "none";
